@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
-<p>
+<p class = "image_file">
   <strong>Image:</strong>
-  <%= image_tag @feed.image.url %>
+  <p><%= image_tag @feed.image.url ,:size => '300x150' %><p>
 </p>
 <p>Content: <%= @feed.content %></p>
 <p>Uploader: <%= @feed.user.name %></p>
